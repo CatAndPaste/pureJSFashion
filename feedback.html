@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы учеников</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main-background">
+        <div class="background-gradient-reviews-left"></div>
+        <div class="background-gradient-reviews-right"></div>
+        <div class="container">
+            <div class="header">
+                <span class="section-title">Отзывы /</span>
+            </div>
+            <div class="header" style="margin-bottom: 0;">
+                <span class="reviews-title">Реальные отзывы<br> учеников</span>
+            </div>
+            <div class="review-content">
+                <div id="reviews-container" class="reviews-container">
+                    <!-- Первый отзыв -->
+                    <div class="review-slide">
+                        <div class="review-text">
+                            <div class="review-author">
+                                Екатерина
+                                <hr class="review-divider">
+                            </div>
+                            <p>“Курс оказался полезным и вполне практичным. Я научилась быстро создавать визуальные концепты с помощью ИИ, раньше на это уходило куда больше времени. Материал подан четко, а кураторы действительно помогли разобраться с инструментами. Рекомендую тем, кто хочет освежить свои навыки и попробовать что-то новое в моде.”</p>
+                        </div>
+                        <div class="review-image">
+                            <img src="images/ekaterina.png" alt="Фото ученика">
+                        </div>
+                    </div>
+                    <!-- Второй отзыв -->
+                    <div class="review-slide">
+                        <div class="review-text">
+                            <div class="review-author">
+                                Елена
+                                <hr class="review-divider">
+                            </div>
+                            <p>“Отзыв о курсе, первый абзац.</p>
+                            <p>Отзыв о курсе, второй абзац. Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста... Много дополнительного текста...”</p>
+                        </div>
+                        <div class="review-image">
+                            <img src="images/elena.jpg" alt="Фото ученика">
+                        </div>
+                    </div>
+                    <!-- Третий отзыв -->
+                    <div class="review-slide">
+                        <div class="review-text">
+                            <div class="review-author">
+                                Максим
+                                <hr class="review-divider">
+                            </div>
+                            <p>“Пример ещё одного отзыва...</p>
+                            <p>Вот так отображаются <a href="#" target="_blank">ссылки</a> и эмодзи: ❤️”</p>
+                        </div>
+                        <div class="review-image">
+                            <img src="images/maxim.jpg" alt="Фото ученика">
+                        </div>
+                    </div>
+                    <!-- Четвертый отзыв -->
+                    <div class="review-slide">
+                        <div class="review-text">
+                            <div class="review-author">
+                                Сергей
+                                <hr class="review-divider">
+                            </div>
+                            <p>“Ещё один отзыв...”</p>
+                        </div>
+                        <div class="review-image">
+                            <img src="images/sergey.jpg" alt="Фото ученика">
+                        </div>
+                    </div>
+                    <!-- Пятый отзыв -->
+                    <div class="review-slide">
+                        <div class="review-text">
+                            <div class="review-author">
+                                Катя
+                                <hr class="review-divider">
+                            </div>
+                            <p>“Ещё один отзыв...”</p>
+                        </div>
+                        <div class="review-image">
+                            <img src="images/cat.jpg" alt="Фото ученика">
+                        </div>
+                    </div>
+                    <!-- Можно добавить больше отзывов -->
+                </div>
+                <div class="review-navigation">
+                    <div class="review-arrow-left" onclick="prevReview()">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 1L1 9L9 17" stroke="white"/>
+                        </svg>
+                    </div>
+                    <div id="review-divider" class="review-arrow-divider">
+                        <svg width="110" height="3" viewBox="0 0 110 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.6" y="2" width="110" height="1" fill="#D9D9D9"/>
+                            <rect id="review-active-segment" width="22" height="3" fill="#D9D9D9"/>
+                        </svg>
+                    </div>
+                    <div class="review-arrow-right" onclick="nextReview()">
+                        <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L1 17" stroke="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <script src="js/review-slider.js"></script>
+</body>
+</html>
